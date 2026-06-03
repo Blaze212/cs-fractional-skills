@@ -6,13 +6,14 @@
   },
   "metadata": {
     "description": "Premium career skills for the Career Systems fractional community",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "career-systems-fractional",
       "source": "./",
-      "description": "Premium career skills for the Career Systems fractional community"
+      "description": "Premium career skills for the Career Systems fractional community",
+      "version": "1.0.1"
     }
   ]
 }
