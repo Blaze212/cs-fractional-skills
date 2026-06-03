@@ -1,0 +1,24 @@
+{
+  "name": "career-systems-fractional",
+  "owner": {
+    "name": "Barton Holdridge",
+    "email": "bartonholdridge@gmail.com"
+  },
+  "description": "Premium career skills for the Career Systems fractional community",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "career-systems-fractional",
+      "source": ".",
+      "description": "Premium career skills for the Career Systems fractional community",
+      "version": "1.0.0",
+      "skills": [
+        "./skills/cs-boolean-job-search",
+        "./skills/cs-boolean-job-search-links",
+        "./skills/cs-job-fit-scorer",
+        "./skills/cs-job-fit-scorer-workspace",
+        "./skills/joke-maker"
+      ]
+    }
+  ]
+}

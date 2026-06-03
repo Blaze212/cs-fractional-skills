@@ -1,0 +1,26 @@
+{
+  "skill_name": "cs-job-fit-scorer",
+  "evals": [
+    {
+      "id": 1,
+      "name": "first-run-resume-capture",
+      "prompt": "Hey, I want to start using you to help me with my job search. Here's my resume — please save it so I don't have to keep pasting it every time. Also, I'm only interested in remote senior IC or staff engineer roles at B2B SaaS companies, comp floor $230K base, hard pass on anything onsite. Resume below.\n\n[PASTE CONTENTS OF fixtures/resume_sample.md HERE]",
+      "expected_output": "Skill should save the resume to <workspace>/.cs-job-fit-scorer/resume.md, save preferences to preferences.md, and confirm both. Should not score anything since no JD was given.",
+      "files": ["fixtures/resume_sample.md"]
+    },
+    {
+      "id": 2,
+      "name": "score-strong-fit-jd",
+      "prompt": "Here's my resume and a JD I'm thinking about applying to. Score the fit and tell me if I should apply.\n\nRESUME:\n[PASTE CONTENTS OF fixtures/resume_sample.md HERE]\n\nJOB DESCRIPTION:\n[PASTE CONTENTS OF fixtures/jd_strong_fit.md HERE]",
+      "expected_output": "Skill should produce a 7-category 0-10 scorecard with overall weighted score, gap analysis, and a bottom-line apply/pass recommendation. For this strong-fit JD (senior IC payments role matching the resume closely), overall should land 8-9, with high marks on experience/responsibilities, skills/tools, and title/level.",
+      "files": ["fixtures/resume_sample.md", "fixtures/jd_strong_fit.md"]
+    },
+    {
+      "id": 3,
+      "name": "score-stretch-jd",
+      "prompt": "Score this for me — am I qualified for this role?\n\nRESUME:\n[PASTE CONTENTS OF fixtures/resume_sample.md HERE]\n\nJOB DESCRIPTION:\n[PASTE CONTENTS OF fixtures/jd_stretch.md HERE]",
+      "expected_output": "Skill should produce the scorecard and honestly call out the major mismatches: senior IC applying to VP-level people-management role at a healthtech company. Overall should land 3-5. IC vs leader fit, years of experience (over-leveled JD), industry, and title/level should all flag as significant gaps. Gap analysis should name healthtech/regulated industry experience, manager-of-managers experience, HIPAA/FDA familiarity. Bottom line should be pass or apply-with-major-caveats.",
+      "files": ["fixtures/resume_sample.md", "fixtures/jd_stretch.md"]
+    }
+  ]
+}

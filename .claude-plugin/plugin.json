@@ -1,0 +1,12 @@
+{
+  "name": "career-systems-fractional",
+  "description": "Premium career skills for the Career Systems fractional community",
+  "version": "1.0.0",
+  "skills": [
+    "./skills/cs-boolean-job-search",
+    "./skills/cs-boolean-job-search-links",
+    "./skills/cs-job-fit-scorer",
+    "./skills/cs-job-fit-scorer-workspace",
+    "./skills/joke-maker"
+  ]
+}

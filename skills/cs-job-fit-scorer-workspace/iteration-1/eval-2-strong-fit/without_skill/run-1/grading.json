@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Produces a 6-row scorecard table (title/level, industry, experience, IC vs leader, skills, years) on a 0\u201310 scale plus overall above",
+      "passed": false,
+      "evidence": "Used 10 ad-hoc dimensions on different weighted scale (94/100), not the 6-row 0-10 schema"
+    },
+    {
+      "text": "Overall score is 8.0 or higher (strong-fit JD warrants high score)",
+      "passed": true,
+      "evidence": "94/100 \u2248 9.4/10 \u2014 well above threshold"
+    },
+    {
+      "text": "Includes a gap analysis section with 1\u20135 specific gaps",
+      "passed": false,
+      "evidence": "Has 'Things to think about' section with 4 items, but framed as advice/caveats not as gap analysis with severity labels"
+    },
+    {
+      "text": "Bottom-line recommendation is to apply",
+      "passed": true,
+      "evidence": "Recommendation: Apply this week."
+    },
+    {
+      "text": "Persists the resume to .cs-job-fit-scorer/resume.md (first-run)",
+      "passed": false,
+      "evidence": "Did not save resume \u2014 no state persistence"
+    }
+  ],
+  "summary": {
+    "pass_rate": 0.4,
+    "passed": 2,
+    "failed": 3,
+    "total": 5
+  }
+}

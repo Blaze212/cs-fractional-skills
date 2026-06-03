@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "score-strong-fit-jd",
+  "prompt": "User pastes resume + Brex Senior SWE Payments JD (strong match). Score and recommend.",
+  "assertions": [
+    {"text": "Produces a 7-row scorecard table (title/level, industry, experience, IC vs leader, skills, years, overall) on a 0–10 scale"},
+    {"text": "Overall score is 8.0 or higher (strong-fit JD warrants high score)"},
+    {"text": "Includes a gap analysis section with 1–5 specific gaps"},
+    {"text": "Bottom-line recommendation is to apply"},
+    {"text": "Persists the resume to .cs-job-fit-scorer/resume.md (first-run)"}
+  ]
+}
